@@ -83,7 +83,6 @@ button.button {
 
 .main-header {
 	background-color: #000000;
-	margin-bottom: 60px;
 }
 
 .main-header a {
@@ -98,6 +97,20 @@ button.button {
 .main-header a:hover,
 .main-header a:active {
 	background-color: #242424;
+}
+
+a.headr-current-page {
+	position: relative;
+}
+
+a.headr-current-page::after {
+	content: "";
+	position: absolute;
+	top: 68px;
+	left: 20px;
+	width: 55px;
+	height: 4px;
+	background-color: #ffffff;
 }
 
 .login-link::before {
@@ -131,7 +144,11 @@ button.button {
 }
 
 .user-navigation a {
-	margin-right: 2px;
+	margin-right: -2px;
+}
+
+a.catalog-header-logo {
+	padding: 22px 19px 22px 22px;
 }
 
 /* index */
@@ -152,6 +169,7 @@ button.button {
 .main-header-logo {
 	display: inline-block;
 	vertical-align: middle;
+	margin-top: 60px;
 	margin-bottom: 18px;
 }
 
@@ -210,6 +228,10 @@ button.button {
 	background-position: 0 0;
 	background-position: center, 0 0;
 	background-repeat: no-repeat, repeat;
+}
+
+.index-columns:last-child {
+	margin-bottom: 65px;
 }
 
 .news {
@@ -305,6 +327,83 @@ button.button {
 	margin-top: 11px;
 }
 
+/* catalog main */
+
+.catalog-page {
+	background-image: url("../img/background-texture.jpg");
+}
+
+.catalog-main .container {
+	text-align: left;
+}
+
+.catalog-main h1 {
+	margin-top: 59px;
+	letter-spacing: 1px;
+}
+
+.catalog-main ul {
+	padding: 0;
+}
+
+.breadcrumbs {
+	margin-top: 23px;
+}
+
+.breadcrumbs ul {
+	display: flex;
+	letter-spacing: 0.5px;
+}
+
+.breadcrumbs li {
+	margin-right: 15px;
+}
+
+.breadcrumbs-separator {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+
+.catalog-flex-container {
+	display: flex;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item-card {
+	margin: 0 15px 15px 0;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px 0 #D3D3D3;
+}
+
+.price-and-buy span {
+	background-color: #e5e5e5;
+}
+
+.page-selector ul {
+	display: flex;
+}
+
+.page-selector .button {
+	width: 43px;
+	margin-right: 5px;
+}
+
+.selector-current-page {
+	width: 43px;
+	height: 43px;
+	text-align: center;
+	padding-top: 10px;
+	margin-right: 5px;
+	background-color: #ffffff;
+}
+
 /* footer */
 
 .main-footer {
@@ -313,7 +412,6 @@ button.button {
 	background-image: url("../img/footer-texture.jpg");
 	background-position: 0 0;
 	background-repeat: repeat;
-	margin-top: 65px;
 	padding: 45px 0px 24px 0px;
 }
 
