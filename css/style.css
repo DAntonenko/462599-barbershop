@@ -367,6 +367,27 @@ a.catalog-header-logo {
 	transform: rotate(45deg);
 }
 
+.filter-manufacturer input {
+	opacity: 0;
+}
+
+.filter-manufacturer li {
+	position: relative;
+}
+
+.filter-manufacturer label:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+}
+
+.filter-manufacturer input {
+	margin-left: 10px;
+}
+
 .catalog-flex-container {
 	display: flex;
 }
