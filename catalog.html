@@ -43,28 +43,28 @@
 
         <div class="catalog-flex-container">
           <section class="filter">
-            <form>
+            <form class="filter" action="https://echo.htmlacademy.ru" method="post">
               <div class="filter-manufacturer">
                 <h2>Производители:</h2>
                 <ul>
-                  <li><label><input type="checkbox" value="baxter-of-california" checked>Baxter of California</label></li>
-                  <li><label><input type="checkbox" value="mr-natty">Mr Natty</label></li>
-                  <li><label><input type="checkbox" value="suavecito" checked>Suavecito</label></li>
-                  <li><label><input type="checkbox" value="malin-goetz">Malin+Goetz</label></li>
-                  <li><label><input type="checkbox" value="murray’s">Murray’s</label></li>
-                  <li><label><input type="checkbox" value="american-crew" checked>American Crew</label></li>
+                  <li><input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked><label for="baxter-of-california">Baxter of California</label></li>
+                  <li><input type="checkbox" name="mr-natty" id="mr-natty"><label for="mr-natty">Mr Natty</label></li>
+                  <li><input type="checkbox" name="suavecito" id="suavecito" checked><label for="suavecito">Suavecito</label></li>
+                  <li><input type="checkbox" name="malin-goetz" id="malin-goetz"><label for="malin-goetz">Malin+Goetz</label></li>
+                  <li><input type="checkbox" name="murray’s" id="murray’s"><label for="murray’s">Murray’s</label></li>
+                  <li><input type="checkbox" name="american-crew" id="american-crew" checked><label for="american-crew">American Crew</label></li>
                 </ul>
               </div>
               <div class="filter-groups">
                 <h2>Группы товаров:</h2>
                 <ul>
-                  <li><label><input type="radio" name="items-group" value="shaving-tools">Бритвенные принадлежности</label></li>
-                  <li><label><input type="radio" name="items-group" value="care-products" checked>Средства для ухода</label></li>
-                  <li><label><input type="radio" name="items-group" value="accessories">Аксессуары</label></li>
+                  <li><input type="radio" name="items-group" value="shaving-tools" id="shaving-tools"><label for="shaving-tools">Бритвенные принадлежности</label></li>
+                  <li><input type="radio" name="items-group" value="care-products" id="care-products" checked><label for="care-products">Средства для ухода</label></li>
+                  <li><input type="radio" name="items-group" value="accessories" id="accessories"><label for="accessories">Аксессуары</label></li>
                 </ul>
               </div>
               <div class="filter-show-button">
-                <a class="button" href="#">Показать</a>
+                <button class="button" type="submit">Показать</button>
               </div>
             </form>
           </section>

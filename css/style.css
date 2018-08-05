@@ -346,6 +346,8 @@ a.catalog-header-logo {
 	padding: 0;
 }
 
+/*Breadcrumbs*/}
+
 .breadcrumbs {
 	margin-top: 23px;
 }
@@ -367,26 +369,70 @@ a.catalog-header-logo {
 	transform: rotate(45deg);
 }
 
+/*Чекбоксы*/
+
+.filter li {
+	position: relative;
+}
+
 .filter-manufacturer input {
 	opacity: 0;
 }
 
-.filter-manufacturer li {
-	position: relative;
-}
-
-.filter-manufacturer label:before {
+.filter-manufacturer label::before {
 	content: "";
 	display: inline-block;
 	position: absolute;
+	left: -15px;
 	width: 15px;
 	height: 15px;
 	border: 2px solid black;
 }
 
 .filter-manufacturer input {
-	margin-left: 10px;
+	margin-left: 0px;
 }
+
+.filter-manufacturer input[type="checkbox"]:checked ~ label::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+	background-image: url("../img/cross.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*Радиобаттон*/
+
+.filter-groups input  {
+	opacity: 0;
+}
+
+.filter-groups label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -15px;
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+.filter-groups input[type="radio"]:checked ~ label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 2px;
+	height:2px;
+	left: -9px;
+	top: 6px;
+	background-color: black;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px #fff, 0 0 0 7px #000;
+}	
 
 .catalog-flex-container {
 	display: flex;
