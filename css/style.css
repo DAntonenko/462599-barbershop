@@ -338,27 +338,32 @@ a.catalog-header-logo {
 }
 
 .catalog-main h1 {
-	margin-top: 59px;
+	margin-top: 58px;
+	margin-bottom: 24px;
 	letter-spacing: 1px;
+}
+
+.catalog-main h2 {
+	font-size: 24px;
 }
 
 .catalog-main ul {
 	padding: 0;
 }
 
-/*Breadcrumbs*/}
-
-.breadcrumbs {
-	margin-top: 23px;
-}
+/*Breadcrumbs*/
 
 .breadcrumbs ul {
 	display: flex;
-	letter-spacing: 0.5px;
+	padding-left: 2px;
 }
 
 .breadcrumbs li {
-	margin-right: 15px;
+	margin-right: 16px;
+}
+
+.breadcrumbs li:nth-child(3) {
+	margin-right: 19px;
 }
 
 .breadcrumbs-separator {
@@ -367,6 +372,29 @@ a.catalog-header-logo {
 	height: 8px;
 	background-color: #000000;
 	transform: rotate(45deg);
+}
+
+/*Filter*/
+
+.filter {
+	margin-top: 16px;
+	width: 240px;
+}
+
+.catalog-main .filter ul {
+	margin-left: 16px;
+	margin-top: 29px;
+	margin-bottom: 50px;
+}
+
+.catalog-main .filter ul li {
+	margin-bottom: 13px;
+	margin-left: 16px;
+	text-align: left;
+}
+
+.filter-manufacturer h2 {
+	margin-bottom: 10px;
 }
 
 /*Чекбоксы*/
@@ -383,7 +411,8 @@ a.catalog-header-logo {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	left: -15px;
+	top: 2px;
+	left: -31px;
 	width: 15px;
 	height: 15px;
 	border: 2px solid black;
@@ -406,15 +435,29 @@ a.catalog-header-logo {
 
 /*Радиобаттон*/
 
+.filter-groups {
+	width: 220px;
+}
+
 .filter-groups input  {
 	opacity: 0;
+}
+
+.filter-groups > ul > li:nth-child(1) > label {
+	display: inline-block;
+	width: 170px;
+}
+
+.catalog-main .filter-groups ul li {
+	line-height: 20px;
+	margin-bottom: 17px;
 }
 
 .filter-groups label::before {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	left: -15px;
+	left: -31px;
 	width: 15px;
 	height: 15px;
 	border: 2px solid black;
@@ -427,12 +470,18 @@ a.catalog-header-logo {
 	position: absolute;
 	width: 2px;
 	height:2px;
-	left: -9px;
+	left: -24px;
 	top: 6px;
 	background-color: black;
 	border-radius: 50%;
 	box-shadow: 0 0 0 5px #fff, 0 0 0 7px #000;
-}	
+}
+
+.filter-show-button button {
+	width: 113px;
+	padding-left: 14px;
+	font-size: 13px;
+}
 
 .catalog-flex-container {
 	display: flex;
@@ -441,6 +490,7 @@ a.catalog-header-logo {
 .items {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 40px;
 }
 
 .item-card {
