@@ -47,6 +47,7 @@ body ul {
 
 body a {
 	text-decoration: none;
+	color: inherit;
 }
 
 .normal-text {
@@ -639,7 +640,7 @@ a.catalog-header-logo {
 	padding-top: 4px;
 }
 
-.price-and-buy {
+.catalog-item-page .price-and-buy {
 	margin-top: 22px;
 	margin-left: -16px;
 	margin-bottom: 52px;
@@ -782,5 +783,5 @@ a.catalog-header-logo {
 /* modal */
 
 .modal {
-	display: none;
+	1display: none;
 }
