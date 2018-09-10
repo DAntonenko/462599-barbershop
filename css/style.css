@@ -159,6 +159,7 @@ a.catalog-header-logo {
 /* index */
 
 .index-page {
+	position: relative;
 	background-color: #000000;
   color: #ffffff;
 }
@@ -784,4 +785,135 @@ a.catalog-header-logo {
 
 .modal {
 	1display: none;
+	color: black;
+	background-color: white;
+	background-image: url("../img/background-texture.jpg");
+}
+
+.modal-login {
+	position: absolute;
+	top: 112px;
+  left: 560px;
+  width: 465px;
+  height: 394px;
+	padding: 40px 85px;
+}
+
+.modal-login input {
+	display: block;
+	border-color: #000;
+}
+
+.modal-login h2 {
+	margin: 15px 0 0 0;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.modal-login input:not([type="checkbox"]) {
+	width: 295px;
+	height: 40px;
+	margin: 10px 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.modal-login input[type="text"] {
+	background-image: url("../img/user.svg");
+	background-repeat: no-repeat;
+	background-position: 265px;
+}
+
+.modal-login input[type="password"] {
+	background-image: url("../img/lock.svg");
+	background-repeat: no-repeat;
+	background-position: 265px;
+}
+
+/* black and capitalized placeholders */
+input::-webkit-input-placeholder {
+	color: #000000;
+	opacity: 1;
+	text-transform: uppercase;
+}/* webkit */
+
+input::-moz-placeholder {
+	color: #000000;
+	opacity: 1;
+	text-transform: uppercase;
+}/* Firefox 19+ */
+
+input:-moz-placeholder {
+	color: #000000;
+	opacity: 1;
+	text-transform: uppercase;
+}/* Firefox 18- */
+
+input:-ms-input-placeholder {
+	color: #000000;
+	opacity: 1;
+	text-transform: uppercase;
+}/* IE */
+
+.modal-login input[type="checkbox"] {
+	opacity: 0;
+	height: 0px;
+}
+
+.modal-login label::before {
+	content: "";
+	display: inline-block;
+	margin: 5px 15px 10px 0;
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+.modal-login input[type="checkbox"]:checked ~ label::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+	background-image: url("../img/cross.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.modal-login label {
+	line-height: 30px;
+	vertical-align: top;
+}
+
+.modal-login a {
+	display: inline-block;
+	text-decoration: underline;
+	text-align: right;
+	margin-left: 65px;
+	line-height: 30px;
+	vertical-align: top;
+}
+
+.modal-login button {
+	display: block;
+	width: 295px;
+}
+
+.modal-login .modal-close {
+	opacity: 0;
+}
+
+.modal-login .modal-close::after {
+	display: block;
+	position: relative;
+	top: -350px;
+	left: 400px;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/cross_modal.svg");
+	background-size: cover;
+	cursor: pointer;
 }

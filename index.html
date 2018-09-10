@@ -146,14 +146,21 @@
     <section class="modal modal-login">
     	<h2>Личный кабинет</h2>
     	<p>Введите пожалуйста свой логин и пароль</p>
-    	<!--Место для формы-->
-    	<span class="modal-close">x</span>
+    	<form action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="login" placeholder="логин">
+        <input type="password" name="password" placeholder="пароль">
+        <input type="checkbox" checked name="remember_me" id="remember">
+        <label for="remember">запомните меня</label>
+        <a href="#">я забыл пароль!</a>
+        <button class="button" type="submit">Войти</button>
+      </form>
+    	<span class="modal-close">закрыть</span>
     </section>
 
     <section class="modal modal-map">
     	<h2 class="visually-hidden">Как до нас добраться</h2>
     	<!--Место для карты-->
-    	<span class="modal-close">x</span>
+    	<span class="modal-close">закрыть</span>
     </section>
 
   </body>
