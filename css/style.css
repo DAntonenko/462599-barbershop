@@ -785,13 +785,31 @@ a.catalog-header-logo {
 
 .modal {
 	1display: none;
+	position: absolute;
 	color: black;
 	background-color: white;
 	background-image: url("../img/background-texture.jpg");
+	box-shadow: 0 0 35px 0;
+}
+
+.modal-close {
+	position: absolute;
+	display: block;
+	opacity: 0;
+}
+
+.modal-close::after {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/cross_modal.svg");
+	background-size: cover;
+	cursor: pointer;
 }
 
 .modal-login {
-	position: absolute;
 	top: 112px;
   left: 560px;
   width: 465px;
@@ -901,19 +919,28 @@ input:-ms-input-placeholder {
 	width: 295px;
 }
 
-.modal-login .modal-close {
-	opacity: 0;
+.login-close::after {
+	top: 0px;
+	left: 0px;
+	background-color: red;
 }
 
-.modal-login .modal-close::after {
-	display: block;
-	position: relative;
-	top: -350px;
-	left: 400px;
-	content: "";
-	width: 25px;
-	height: 25px;
-	background-image: url("../img/cross_modal.svg");
+/* map */
+
+.modal-map {
+	top: 575px;
+  left: 402px;
+  width: 780px;
+	height: 570px;
+	border: solid oldlace 15px;
+	background-color: #aba9a7;
+	background-image: url("../img/map.jpg");
 	background-size: cover;
-	cursor: pointer;
 }
+
+.map-close::after {
+	top: 0px;
+	left: 0px;
+	background-color: red;
+}
+
