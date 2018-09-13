@@ -784,7 +784,6 @@ a.catalog-header-logo {
 /* modal */
 
 .modal {
-	1display: none;
 	position: absolute;
 	color: black;
 	background-color: white;
@@ -792,16 +791,12 @@ a.catalog-header-logo {
 	box-shadow: 0 0 35px 0;
 }
 
-.modal-close {
-	position: absolute;
-	display: block;
-	opacity: 0;
+.modal-hide {
+	display: none;
 }
 
-.modal-close::after {
-	display: block;
+.modal-close {
 	position: absolute;
-	content: "";
 	width: 25px;
 	height: 25px;
 	background-image: url("../img/cross_modal.svg");
@@ -919,10 +914,9 @@ input:-ms-input-placeholder {
 	width: 295px;
 }
 
-.login-close::after {
-	top: 0px;
-	left: 0px;
-	background-color: red;
+.login-close {
+	top: 5px;
+	left: 470px;
 }
 
 /* map */
@@ -938,9 +932,8 @@ input:-ms-input-placeholder {
 	background-size: cover;
 }
 
-.map-close::after {
-	top: 0px;
-	left: 0px;
-	background-color: red;
+.map-close {
+	top: -10px;
+	left: 770px;
 }
 

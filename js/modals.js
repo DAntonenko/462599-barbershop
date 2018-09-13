@@ -7,18 +7,21 @@ var mapBox = document.querySelector(".modal-map");
 var loginClose = document.querySelector(".login-close");
 var mapClose = document.querySelector(".map-close");
 
-loginLink.addEventListener("click", function() {
-	console.log("Клик по ссылке вход");
+loginLink.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	loginBox.classList.remove("modal-hide"); 
 });
 
 mapLink.addEventListener("click", function() {
-	console.log("Клик по ссылке mapa");
+	mapBox.classList.remove("modal-hide");
 });
 
-loginClose.addEventListener("click", function() {
-	console.log("Клик по cross login");
+loginClose.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	loginBox.classList.add("modal-hide");
 });
 
-mapClose.addEventListener("click", function() {
-	console.log("Клик по cross mapa");
+mapClose.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	mapBox.classList.add("modal-hide");
 });
