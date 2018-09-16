@@ -129,11 +129,17 @@ a.headr-current-page::after {
 }
 
 .main-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .main-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 0;
 	margin: 0;
@@ -180,8 +186,12 @@ a.catalog-header-logo {
 }
 
 .features-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding-left: 0;
 }
 
@@ -219,11 +229,15 @@ a.catalog-header-logo {
 	width: 20px;
 	height: 20px;
 	background-color: #f7f4f1;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	margin-bottom: 10px;
 }
 
 .index-columns {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 36px;
 	color: #000000;
@@ -305,8 +319,11 @@ a.catalog-header-logo {
 }
 
 .appointment form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
 }
 
@@ -359,12 +376,16 @@ a.catalog-header-logo {
 }
 
 .catalog-flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 /* Breadcrumbs */
 
 .breadcrumbs ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding-left: 2px;
 }
@@ -382,7 +403,9 @@ a.catalog-header-logo {
 	width: 8px;
 	height: 8px;
 	background-color: #000000;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .catalog-item-page .breadcrumbs li {
@@ -493,7 +516,8 @@ a.catalog-header-logo {
 	top: 6px;
 	background-color: black;
 	border-radius: 50%;
-	box-shadow: 0 0 0 5px #fff, 0 0 0 7px #000;
+	-webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 7px #000;
+	        box-shadow: 0 0 0 5px #fff, 0 0 0 7px #000;
 }
 
 .filter-show-button button {
@@ -505,15 +529,19 @@ a.catalog-header-logo {
 /* item cards */
 
 .items {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 40px;
 }
 
 .item-card {
 	margin: 0 0px 24px 20px;
 	background-color: #ffffff;
-	box-shadow: 0 0 10px 0 #D3D3D3;
+	-webkit-box-shadow: 0 0 10px 0 #D3D3D3;
+	        box-shadow: 0 0 10px 0 #D3D3D3;
 }
 
 .item-card h3 {
@@ -550,6 +578,8 @@ a.catalog-header-logo {
 }
 
 .page-selector ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -595,25 +625,37 @@ a.catalog-header-logo {
 
 .main-item-image, .preview-item-image {
 	background-color: #ffffff;
-	box-shadow: 0 0 10px 0 #D3D3D3;
+	-webkit-box-shadow: 0 0 10px 0 #D3D3D3;
+	        box-shadow: 0 0 10px 0 #D3D3D3;
 }
 
 .item-page-flexbox {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 54px;
 	margin-left: 2px;
 }
 
 .item-images {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 500px;
 }
 
 .block-head {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-bottom: 29px;
 }
 
@@ -628,7 +670,9 @@ a.catalog-header-logo {
 	width: 8px;
 	height: 8px;
 	background-color: #000000;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	margin: 0 11px 1px 2px;
 }
 
@@ -667,6 +711,8 @@ a.catalog-header-logo {
 }
 
 .main-footer .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -699,6 +745,8 @@ a.catalog-header-logo {
 }
 
 .footer-social ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -788,7 +836,8 @@ a.catalog-header-logo {
 	color: black;
 	background-color: white;
 	background-image: url("../img/background-texture.jpg");
-	box-shadow: 0 0 35px 0;
+	-webkit-box-shadow: 0 0 35px 0;
+	        box-shadow: 0 0 35px 0;
 }
 
 .modal-hide {
@@ -932,8 +981,70 @@ input:-ms-input-placeholder {
 	background-size: cover;
 }
 
+.modal-map iframe {
+	border-style: none;
+}
+
 .map-close {
 	top: -10px;
 	left: 770px;
 }
 
+/* modal windows animations */
+
+@-webkit-keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px); }
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px); }
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+.modal-show-bounce {
+	-webkit-animation-name: bounce;
+	        animation-name: bounce;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s;
+}
+
+@-webkit-keyframes shake {
+	0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+
+@keyframes shake {
+	0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+
+.modal-error {
+	-webkit-animation-name: shake;
+	        animation-name: shake;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s;
+}
+
+@-webkit-keyframes scale {
+	0% {-webkit-transform: scale(0, 0);transform: scale(0, 0); }
+	100% {-webkit-transform: scale(100%, 100%);transform: scale(100%, 100%); }
+}
+
+@keyframes scale {
+	0% {-webkit-transform: scale(0, 0);transform: scale(0, 0); }
+	100% {-webkit-transform: scale(100%, 100%);transform: scale(100%, 100%); }
+}
+
+.modal-show-scale {
+	-webkit-animation-name: scale;
+	        animation-name: scale;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s;
+}
